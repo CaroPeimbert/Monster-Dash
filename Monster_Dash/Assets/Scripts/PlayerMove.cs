@@ -17,7 +17,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void Update() //Clase update, todo el tiempo que el juego se esté ejecutando se estara rpitiendo
     {
-        if (Input.GetKey("space")); //si pulsamos espacio
+         //si pulsamos espacio
        
     }
 }
