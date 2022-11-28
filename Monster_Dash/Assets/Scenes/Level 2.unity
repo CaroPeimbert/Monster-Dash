@@ -306,6 +306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BG_MD_lvl 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8655401728686597947, guid: f8236168385081342a8e7cfbcd254516, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8236168385081342a8e7cfbcd254516, type: 3}
 --- !u!1 &943446237

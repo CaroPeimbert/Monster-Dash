@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movimientoFondo : MonoBehaviour
 {
-    float scrollSpeed = -10f;
+    float scrollSpeed = -15f;
     Vector2 startPos;
 
     // Start is called before the first frame update
