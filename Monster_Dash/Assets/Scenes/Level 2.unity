@@ -251,7 +251,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &634380766
+--- !u!1001 &613990166
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -264,15 +264,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 562213384246774174, guid: f8236168385081342a8e7cfbcd254516, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.7306614
+      value: 12.8
       objectReference: {fileID: 0}
     - target: {fileID: 562213384246774174, guid: f8236168385081342a8e7cfbcd254516, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.2296705
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 562213384246774174, guid: f8236168385081342a8e7cfbcd254516, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0726907
+      value: 0.10409
       objectReference: {fileID: 0}
     - target: {fileID: 562213384246774174, guid: f8236168385081342a8e7cfbcd254516, type: 3}
       propertyPath: m_LocalRotation.w
@@ -409,7 +409,7 @@ Tilemap:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 0, y: 0, z: 1}
-  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileAnchor: {x: 1, y: 1, z: 1}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
     e00: 1
@@ -508,7 +508,7 @@ Camera:
   m_GameObject: {fileID: 1494788920}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -526,7 +526,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8.179747
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
