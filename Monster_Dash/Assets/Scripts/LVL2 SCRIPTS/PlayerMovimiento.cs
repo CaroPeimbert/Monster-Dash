@@ -2,17 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum velocidades{Slow= 0, Normal= 1, Fast = 2, Faster= 3, Fastest= 4};
 public class PlayerMovimiento : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public velocidades VelocidadActual;
 }
