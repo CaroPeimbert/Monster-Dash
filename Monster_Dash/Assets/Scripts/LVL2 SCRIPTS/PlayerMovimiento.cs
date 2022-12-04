@@ -12,6 +12,8 @@ public class PlayerMovimiento : MonoBehaviour
     public float GroundCheckRadius;
     public LayerMask GroundMask;
     Rigidbody2D rb2d;
+    public Transform Sprite;
+    
 
     void Start() 
     {
@@ -22,13 +24,22 @@ public class PlayerMovimiento : MonoBehaviour
     {
         transform.position += Vector3.right * SpeedValues[(int)VelocidadActual] *Time.deltaTime;
 
-        if (Input.GetMouseButton(0))
+        if (OnGround())
         {
-            if (OnGround())
+            Vector3 Rotation = Sprite.rotation.eulerAngles;
+            Rotation.z = Mathf.Round(Rotation.z/90)*90;
+            Sprite.rotation = Quaternion.Euler(Rotation);
+
+
+            if (Input.GetMouseButton(0))
             {
                rb2d.velocity = Vector2.zero;
                rb2d.AddForce(Vector2.up * 26.6581f, ForceMode2D.Impulse);
             }
+        }
+        else
+        {
+            Sprite.Rotate(Vector3.back *5);
         }
     }
     bool OnGround()
