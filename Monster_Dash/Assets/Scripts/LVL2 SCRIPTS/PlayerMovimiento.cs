@@ -26,7 +26,7 @@ public class PlayerMovimiento : MonoBehaviour
         {
             if (OnGround())
             {
-               
+               rb2d.AddForce(Vector2.up * 26.6581);
             }
         }
     }
