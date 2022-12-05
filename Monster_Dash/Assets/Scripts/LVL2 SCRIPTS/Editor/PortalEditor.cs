@@ -1,6 +1,6 @@
 using UnityEditor;
  
-[CustomEditor(typeof(PortalesCheckpoints)), CanEditMultipleObjects]
+[CustomEditor(typeof(PortalScript)), CanEditMultipleObjects]
 public class PortalEditor : Editor
 {
     public enum DisplayCategory

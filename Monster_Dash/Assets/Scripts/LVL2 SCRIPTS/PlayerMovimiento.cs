@@ -2,20 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum velocidades{Slow= 0, Normal= 1, Fast = 2, Faster= 3, Fastest= 4};
+public enum Speeds{Slow= 0, Normal= 1, Fast = 2, Faster= 3, Fastest= 4};
 public enum Gamemodes{Cube = 0, Ship = 1};
 public enum Gravity {Upright = 1, UpsideDown = -1};
 public class PlayerMovimiento : MonoBehaviour
 {
-    public velocidades VelocidadActual;
+    public Speeds CurrentSpeed;
     public Gamemodes CurrentGamemode;
     float[] SpeedValues = {8.6f, 10.4f, 12.96f, 15.6f, 19.27f};
 
     public Transform GroundCheckTransform;
     public float GroundCheckRadius;
     public LayerMask GroundMask;
-    Rigidbody2D rb2d;
+    
     public Transform Sprite;
+    Rigidbody2D rb2d;
     
 
     void Start() 
@@ -25,7 +26,7 @@ public class PlayerMovimiento : MonoBehaviour
 
     void Update() 
     {
-        transform.position += Vector3.right * SpeedValues[(int)VelocidadActual] *Time.deltaTime;
+        transform.position += Vector3.right * SpeedValues[(int)CurrentSpeed] *Time.deltaTime;
 
         if (OnGround())
         {
@@ -50,13 +51,13 @@ public class PlayerMovimiento : MonoBehaviour
         return Physics2D.OverlapCircle(GroundCheckTransform.position, GroundCheckRadius, GroundMask);
     }
 
-    public void CambioDePortales(Gamemodes Gamemode, velocidades Speed, Gravity gravity, int State)
+    public void CambioDePortales(Gamemodes Gamemode, Speeds Speed, Gravity gravity, int State)
     {
         switch (State)
         {
             
             case 0: 
-            VelocidadActual = Speed;
+            CurrentSpeed = Speed;
             break;
             case 1:
             CurrentGamemode = Gamemode;

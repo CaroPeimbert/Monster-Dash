@@ -4,10 +4,10 @@ using UnityEngine;
 
 
 
-public class PortalesCheckpoints : MonoBehaviour
+public class PortalScript : MonoBehaviour
 {
     public Gamemodes Gamemode;
-    public velocidades Speed;
+    public Speeds Speed;
     public Gravity gravity;
     public int State;
 
