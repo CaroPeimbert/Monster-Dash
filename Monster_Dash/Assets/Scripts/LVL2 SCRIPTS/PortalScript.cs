@@ -15,7 +15,7 @@ public class PortalScript : MonoBehaviour
     {
         try
         {
-            PlayerMovimiento movement = collision.gameObject.GetComponent<PlayerMovimiento>();
+            Movement movement = collision.gameObject.GetComponent<Movement>();
             movement.CambioDePortales(Gamemode, Speed, gravity, State);
         }
         catch {}
