@@ -18,13 +18,13 @@ public class PortalEditor : Editor
             switch (serializedObject.FindProperty("State").intValue)
             {
                 case 0:
-                    categoryToDisplay = DisplayCategory.Velocidad;
+                    categoryToDisplay = DisplayCategory.Speed;
                     break;
                 case 1:
                     categoryToDisplay = DisplayCategory.Gamemode;
                     break;
                 case 2:
-                    categoryToDisplay = DisplayCategory.gravity;
+                    categoryToDisplay = DisplayCategory.Gravity;
                     break;
             }
         }
