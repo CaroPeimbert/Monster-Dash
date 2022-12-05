@@ -2418,7 +2418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53f4f497401fc542a190be0e9fc00ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentSpeed: 0
+  CurrentSpeed: 1
   CurrentGamemode: 0
   GroundCheckTransform: {fileID: 8428666876769199276}
   GroundCheckRadius: 0.05
