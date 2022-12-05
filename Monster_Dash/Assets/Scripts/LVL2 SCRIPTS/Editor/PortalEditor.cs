@@ -40,7 +40,7 @@ public class PortalEditor : Editor
                 break;
  
             case DisplayCategory.Gravity:
-                DisplayProperty("Velocidad", 2);
+                DisplayProperty("Speed", 2);
                 break;
  
             case DisplayCategory.Speed:
