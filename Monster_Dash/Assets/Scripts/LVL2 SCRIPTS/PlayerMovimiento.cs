@@ -50,13 +50,13 @@ public class PlayerMovimiento : MonoBehaviour
         return Physics2D.OverlapCircle(GroundCheckTransform.position, GroundCheckRadius, GroundMask);
     }
 
-    public void CambioDePortales(Gamemodes Gamemode, velocidades Velocidad, Gravity gravity, int State)
+    public void CambioDePortales(Gamemodes Gamemode, velocidades Speed, Gravity gravity, int State)
     {
         switch (State)
         {
             
             case 0: 
-            VelocidadActual = Velocidad;
+            VelocidadActual = Speed;
             break;
             case 1:
             CurrentGamemode = Gamemode;

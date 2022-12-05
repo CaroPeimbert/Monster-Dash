@@ -7,7 +7,7 @@ using UnityEngine;
 public class PortalesCheckpoints : MonoBehaviour
 {
     public Gamemodes Gamemode;
-    public velocidades Velocidad;
+    public velocidades Speed;
     public Gravity gravity;
     public int State;
 
@@ -16,7 +16,7 @@ public class PortalesCheckpoints : MonoBehaviour
         try
         {
             PlayerMovimiento movement = collision.gameObject.GetComponent<PlayerMovimiento>();
-            movement.CambioDePortales(Gamemode, Velocidad, gravity, State);
+            movement.CambioDePortales(Gamemode, Speed, gravity, State);
         }
         catch {}
     }
