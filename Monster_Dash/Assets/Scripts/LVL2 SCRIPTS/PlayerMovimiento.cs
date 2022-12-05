@@ -4,9 +4,11 @@ using UnityEngine;
 
 public enum velocidades{Slow= 0, Normal= 1, Fast = 2, Faster= 3, Fastest= 4};
 public enum Gamemodes{Cube = 0, Ship = 1};
+public enum Gravity {Upright = 1, UpsideDown = -1};
 public class PlayerMovimiento : MonoBehaviour
 {
     public velocidades VelocidadActual;
+    public Gamemodes CurrentGamemode;
     float[] SpeedValues = {8.6f, 10.4f, 12.96f, 15.6f, 19.27f};
 
     public Transform GroundCheckTransform;
@@ -46,5 +48,23 @@ public class PlayerMovimiento : MonoBehaviour
     bool OnGround()
     {
         return Physics2D.OverlapCircle(GroundCheckTransform.position, GroundCheckRadius, GroundMask);
+    }
+
+    public void CambioDePortales(Gamemodes Gamemode, velocidades Velocidad, Gravity gravity, int State)
+    {
+        switch (State)
+        {
+            
+            case 0: 
+            VelocidadActual = Velocidad;
+            break;
+            case 1:
+            CurrentGamemode = Gamemode;
+            break;
+            case 2:
+            rb2d.gravityScale = Mathf.Abs(rb2d.gravityScale)* (int)gravity;
+            break;
+
+        }
     }
 }
