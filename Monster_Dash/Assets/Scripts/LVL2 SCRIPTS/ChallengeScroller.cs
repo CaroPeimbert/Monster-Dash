@@ -14,6 +14,10 @@ public class ChallengeScroller : MonoBehaviour
         {
             currentChild = transform.GetChild(i).gameObject;
             ScrollChallenge(currentChild);
+            if (currentChild.transform.position.x <= -15.0f)
+            {
+                Destroy(currentChild);
+            }
         }
     }
 
