@@ -885,7 +885,7 @@ GameObject:
   - component: {fileID: 419173149}
   - component: {fileID: 419173150}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Piso
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -899,12 +899,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419173147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.530699, y: -11.162349, z: 0.04093044}
+  m_LocalPosition: {x: -11.0193, y: -4.6533, z: 0}
   m_LocalScale: {x: 44.84034, y: 1.1333371, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1004990152}
-  m_RootOrder: 8
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &419173149
 SpriteRenderer:
@@ -1748,7 +1748,6 @@ Transform:
   - {fileID: 534143021}
   - {fileID: 1645951749}
   - {fileID: 1183698869}
-  - {fileID: 419173148}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2627,7 +2626,7 @@ GameObject:
   - component: {fileID: 1247625726}
   m_Layer: 0
   m_Name: CheckGround
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2640,7 +2639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247625725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.47, y: -0.95, z: 0}
+  m_LocalPosition: {x: 1.67, y: -0.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
