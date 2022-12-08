@@ -5,9 +5,27 @@ using UnityEngine;
 public class ChallengeScroller : MonoBehaviour
 {
     public float scrollSpeed = 5.0f;
+    public GameObject[] challenges;
+    public float frequency = 0.5f;
+    float counter = 0.0f;
+    public Transform challengesSpawnPoint;
+
+    void Start() 
+    {
+        GenerateRandomChallenge();
+    }
 
     void Update()
     {
+        if (counter <= 0.0f)
+        {
+            GenerateRandomChallenge();
+        }
+        else
+        {
+            counter -=Time.deltaTime*frequency;
+        }
+
         GameObject currentChild;
 
         for (int i = 0; i < transform.childCount; i++)
@@ -24,5 +42,11 @@ public class ChallengeScroller : MonoBehaviour
     void ScrollChallenge(GameObject currentChallenge)
     {
         currentChallenge.transform.position -= Vector3.right * (scrollSpeed*Time.deltaTime);
+    }
+
+    void GenerateRandomChallenge() 
+    {
+        Instantiate(challenges[Random.Range(0, challenges.Length)], challengesSpawnPoint.position, Quaternion.identity);
+        counter = 1.0f;
     }
 }
