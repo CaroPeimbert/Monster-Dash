@@ -5,25 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Respawn : MonoBehaviour
 {
+    [SerializeField]
+    private Transform player;
 
-   private float CheckPointX, CheckPointY; //
-    //public SpriteRenderer animator;
+    [SerializeField]
+    private Transform respawnPoint;
 
-    void Start()
-    {
-        if (PlayerPrefs.GetFloat("CheckPointX")!= 0)//preferencias del Player
-        {
-            transform.position =(new Vector2(PlayerPrefs.GetFloat("CheckPointX"), PlayerPrefs.GetFloat("CheckPointY"))); //nos regresa al punto de donde se ubica el CheckPoint
-        }
-    }
-    public void CheckPointD(float x, float y)//cuando las coordenadas están guardas, ejecuta las posiciones
-    {
-        PlayerPrefs.SetFloat("CheckPointX", x);
-        PlayerPrefs.SetFloat("CheckPointY", y);
-    }
-    public void PlayerDamage()//cuando colisionamos con el "enemigo", se reinicia la escena activa
-    {
-        
+    void OnTriggerEnter2D(Collider2D other) 
+   {
+        player.transform.position = respawnPoint.transform.position;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+
+   }
 }
