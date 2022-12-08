@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class Respawn : MonoBehaviour
 {
 
-    private float CheckPointX, CheckPointY; //
-    public Animator animator;
+   private float CheckPointX, CheckPointY; //
+    //public SpriteRenderer animator;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class Respawn : MonoBehaviour
     }
     public void PlayerDamage()//cuando colisionamos con el "enemigo", se reinicia la escena activa
     {
-        animator.Play("Hit");
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
