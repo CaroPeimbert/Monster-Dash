@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 33913629240618231}
   - component: {fileID: 33913629240618228}
   - component: {fileID: 33913629240618229}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cubos
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,9 +122,9 @@ GameObject:
   - component: {fileID: 33913629310601471}
   - component: {fileID: 33913629310601468}
   - component: {fileID: 33913629310601469}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cubos
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,9 +233,9 @@ GameObject:
   - component: {fileID: 33913629410027276}
   - component: {fileID: 33913629410027277}
   - component: {fileID: 33913629410027314}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cubos
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -344,9 +344,9 @@ GameObject:
   - component: {fileID: 33913629578616749}
   - component: {fileID: 33913629578616786}
   - component: {fileID: 33913629578616787}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cubos
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -455,9 +455,9 @@ GameObject:
   - component: {fileID: 33913629901935855}
   - component: {fileID: 33913629901935852}
   - component: {fileID: 33913629901935853}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cubos
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,7 +564,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 33913630111695935}
-  - component: {fileID: 33913630111695932}
   m_Layer: 0
   m_Name: Cubos
   m_TagString: Untagged
@@ -593,32 +592,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &33913630111695932
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33913630111695934}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &33913630344515352
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,9 +603,9 @@ GameObject:
   - component: {fileID: 33913630344515353}
   - component: {fileID: 33913630344515358}
   - component: {fileID: 33913630344515359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cubos
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

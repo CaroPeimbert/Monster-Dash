@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 
 
-public class PortalScript : MonoBehaviour
+public class PortalScriptlvl1 : MonoBehaviour
 {
     public Gamemodes Gamemode;
     public Speeds Speed;
@@ -18,7 +18,7 @@ public class PortalScript : MonoBehaviour
         {
             Movement movement = collision.gameObject.GetComponent<Movement>();
             movement.ChangeThroughPortal(Gamemode, Speed, gravity, State);
-            SceneManager.LoadScene("Exit");
+            SceneManager.LoadScene("Level 2");
         }
         catch {}
     }
