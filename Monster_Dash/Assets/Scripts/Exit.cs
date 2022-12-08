@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Menu : MonoBehaviour
+public class Exit : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,15 +14,5 @@ public class Menu : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void EscenaJuego()
-    {
-        SceneManager.LoadScene("LVL1");
-    }
-
-    public void EscenaSalida()
-    {
-        SceneManager.LoadScene("Exit");
     }
 }

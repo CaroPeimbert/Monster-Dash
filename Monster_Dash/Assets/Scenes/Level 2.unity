@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gamemode: 1
-  Speed: 1
+  Speed: 2
   gravity: 1
   State: 2
 --- !u!1 &561603022

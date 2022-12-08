@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -17,8 +18,10 @@ public class PortalScript : MonoBehaviour
         {
             Movement movement = collision.gameObject.GetComponent<Movement>();
             movement.ChangeThroughPortal(Gamemode, Speed, gravity, State);
+            SceneManager.LoadScene("Exit");
         }
         catch {}
     }
+    
 
 }
