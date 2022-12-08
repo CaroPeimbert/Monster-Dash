@@ -6,7 +6,7 @@ public class ChallengeScroller : MonoBehaviour
 {
     public float scrollSpeed = 5.0f;
     public GameObject[] challenges;
-    public float frequency = 0.5f;
+    public float frequency = 2.5f;
     float counter = 0.0f;
     public Transform challengesSpawnPoint;
 
