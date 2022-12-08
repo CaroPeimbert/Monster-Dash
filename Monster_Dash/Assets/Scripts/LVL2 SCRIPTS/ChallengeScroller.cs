@@ -48,6 +48,6 @@ public class ChallengeScroller : MonoBehaviour
     {
         GameObject newChallenge = Instantiate(challenges[Random.Range(0, challenges.Length)], challengesSpawnPoint.position, Quaternion.identity)as GameObject;
         newChallenge.transform.parent = transform;
-        counter = 1.0f;
+        counter = 2.7f;
     }
 }
