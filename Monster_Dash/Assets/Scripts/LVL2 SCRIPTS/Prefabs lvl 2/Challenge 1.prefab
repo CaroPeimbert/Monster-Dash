@@ -267,6 +267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4801551517399161652}
   - component: {fileID: 4269644865281069592}
+  - component: {fileID: 7114143582687230461}
   m_Layer: 0
   m_Name: Pico
   m_TagString: Untagged
@@ -341,6 +342,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7114143582687230461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3429557913027918753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabc52ad363d0414998a1e3186f1e0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9124048133650095283
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,6 +364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306485803447215972}
   - component: {fileID: 980723705584622599}
+  - component: {fileID: 1318793955662084773}
   m_Layer: 0
   m_Name: Pico (1)
   m_TagString: Untagged
@@ -425,3 +439,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1318793955662084773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9124048133650095283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabc52ad363d0414998a1e3186f1e0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
